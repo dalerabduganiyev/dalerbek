@@ -1,0 +1,506 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+body{
+    margin: 0;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+.div{
+    background-color: #3FA46A;
+    padding: 200px;
+    text-align: center;
+
+}
+.a{
+    display:inline-block;
+    font-size: 70px;
+    text-decoration: none;
+   font-weight: bold;
+   color: white;
+   text-transform: uppercase;
+   position: relative;
+   padding: 20px 0;
+}
+.a::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 8px;
+    background-color: white;
+    left: 0;
+    top: 100%;
+    transform: translateY(-30px) rotateX(90deg);
+    opacity: 0;
+    transition: 0.2s all linear;
+}
+.a:hover::after{
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+}
+.a1{
+    display: inline-block;
+    font-size: 70px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+  
+
+ }
+ .a1::before {
+    content: "[";
+  position: absolute;
+  top: -7px;
+  left: -10px;
+    color: white;
+    opacity: 0;
+    transition: 0.2s all linear;
+ }
+ .a1:hover::before{
+    opacity: 1;
+    transform: translateX(-30px);
+ }
+ 
+ .a1::after{
+    content: "]";
+    position: absolute;
+    top:-7px ;
+    right:-10px;
+    color: white;
+    opacity: 0;
+    transition: 0.2s all linear;
+ }
+ .a1:hover::after{
+    opacity: 1;
+    transform: translateX(30px);
+ }
+ .div1{
+    text-align: center;
+    padding: 200px;
+    background-color: #435A6B;
+ }
+
+ .div2{
+    text-align: center;
+    padding: 200px;
+    background-color: #0E83CD;
+ }
+.a2{
+    display: inline-block;
+    font-size: 70px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    background-color: #28A1ED;
+    padding: 10px;
+    transition: 0.2s all linear;
+    transform-style: preserve-3d;
+}
+.a2::before{
+    content: "SUMPTUOUS";
+    padding: 10px;
+    background-color:#006db1 ;
+    position: absolute;
+left: 0;
+top: 100%;
+transform-origin: top;
+transform: rotateX(-90deg);
+transition: 0.2s all linear;
+}
+.a2:hover{
+    transform: translateY(-50%) rotateX(90deg);
+    
+}
+.a2:hover::before{
+    background-color: #28A1ED;
+}
+.div3{
+    text-align: center;
+    padding: 200px;
+    background-color: #F19F0F;
+}
+.a3{
+    display: inline-block;
+    font-size: 70px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    position: relative; 
+    padding: 30px 0;
+  
+}
+.a3::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    background-color: #bb7804;
+    top: 100%;
+  opacity: 0;
+  transition: 0.2s all linear;
+}
+.a3:hover::before{
+    opacity: 1;
+    transform: translateY(-30px);
+}
+.div4{
+    text-align: center;
+    padding: 200px;
+    background-color: #CD4436;
+}
+.a4{
+    display: inline-block;
+    font-size: 70px;
+    text-decoration: none;
+    font-weight: bold;
+    color: transparent;
+    position: relative;   
+    padding: 5px;
+  line-height: 0.8;
+  overflow: hidden;
+}
+
+.a4::before, .a4::after{
+    content: "SUMPTUOUS";
+    position: absolute;
+    left: 0;
+    top: 100%;
+    color: white;
+  padding: 5px;
+  transition: 0.3s all linear;
+}
+.a4::before{
+   top: 0;
+   font-weight: normal;
+   width: 100%;
+   text-align: center;
+}
+.a4:hover:after,
+.a4:hover:before{
+    transform: translateY(-100%);
+}
+.a4::after{
+    top: 100%;
+}
+.div5{
+    text-align: center;
+    padding: 200px;
+    background-color: #0E83CD;
+}
+.a5{
+    display: inline-block;
+    font-size: 70px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    position: relative;   
+padding: 18px 25px;
+}
+.a5::after, .a5::before{
+     position: absolute;
+     content: "";
+     top: 0;
+     background-color: white;
+    transition: 0.3s all linear;
+    left: 0;
+}
+.a5::after{
+    width: 100%;
+    height: 4px;
+}
+.a5:hover::after{
+  top: 100%;
+}
+.a5::before{
+   
+    width: 4px;
+    height: 0;
+     transition: 0.3s all linear; 
+}
+.a5:hover::before{
+   height: 100%;
+}
+.div6{
+    text-align: center;
+    padding: 200px;
+    background-color: #CD4436;
+}
+.a6{
+    display: inline-block;
+    font-size: 70px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    position: relative; 
+    background-color: #E35041;
+    transition: 0.3згнs all linear;
+    transform-style: preserve-3d;
+    padding: 10px;transition: 0.3s all linear;
+}
+
+.a6::before{
+    content: "SUMPTUOUS";
+    padding: 10px;
+   background-color: #af1201 ;
+    position: absolute;
+left: 100%;
+top: 0;
+width: 100%;
+transform-origin: left;
+transform: rotateY(-90deg);
+transition: 0.3s all linear;
+}
+.a6:hover::before{
+    background-color:#E35041;
+}
+.a6:hover{
+transform: translateX(-230px) rotateY(90deg);
+background-color:#af1201  ;
+}
+.div7{
+    text-align: center;
+    padding: 200px;
+    background-color: #ECF0F1;
+}
+.a7{
+    display: inline-block;
+    font-size: 70px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #566473;
+    position: relative;   
+     padding: 20px 0;
+    transition: 0.3s all linear;
+}
+.a7::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color:#566473;
+    top: 100%;
+    right: 0;
+    transition: 0.3s all linear;
+}
+.a7::after{
+content: "";
+position: absolute;
+width: 100%;
+height: 5px;
+background-color:#566473;
+top  : 100%;
+right: 0;
+}
+.a7:hover{
+    padding: 20px   ;
+    
+   
+}
+.a7:hover::before{
+  top: 0;
+  right: 0;
+}
+.div8{
+    text-align: center;
+    padding: 200px;
+    background-color: #435A6B;
+}
+.a8{
+    display: inline-block;
+    font-size: 70px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    position: relative;  
+    border: 6px solid #354856;
+    padding: 10px;
+}
+.a8::after{
+ content: "SUMPTUOUS";
+ position: absolute;
+border: 6px solid #354856;
+color: transparent;
+padding: 10px;
+right: -30px;
+top: -30px;
+opacity: 0;
+transition: 0.4s all linear;
+}
+.a8:hover::after{
+    opacity: 1;
+   transform: translateX(-24px) translateY(24px);
+   border-color: white;
+}
+.div9{
+    text-align: center;
+    padding: 200px;
+    background-color: #9E487F;
+}
+.a9{
+    display: inline-block;
+    font-size: 70px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    position: relative;  
+   padding: 10px;
+}
+.a9::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    top: 0;
+    right: 0;
+    transition: 0.2s all linear;
+}
+
+.span{
+    font-weight: normal;
+    position: absolute;
+    font-style: italic;
+    color: #566473;
+    transform: translateY(30px) translateX(-370px);
+opacity: 0;
+  transition: 0.3s all linear;
+
+}
+.a9:hover .span{
+    transform: translateY(60px) translateX(-370px);
+opacity: 1;
+}
+.a9::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+background-color: white;
+top: 110px;
+right: 0;
+transition: 0.3s all linear;
+}
+.a9:hover:before{
+    transform: translateY(50px);
+}
+
+.a9:hover::after{
+    height: 8px;
+}
+.div10{
+    text-align: center;
+    padding: 200px;
+    background-color: #16A085;
+}
+.a10{
+    display: inline-block;
+    font-size: 70px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #0F7C67;
+    position: relative;  
+    background-color:white ;
+    padding:  10px;
+    overflow: hidden;
+}
+.a10::after{
+    content: "SUMPTUOUS";
+    position: absolute;
+    padding: 10px;
+    background-color: #0F7C67;
+    color: white;
+    top: 0;
+    right: 0;
+    transition: 0.3s all linear;
+}
+.a10:hover::after{
+    transform: translateX(100%);
+}
+.div11{
+    padding: 200px;
+    text-align: center;
+    background-color: #0E83CD;
+}
+.a11{
+    display: inline-block;
+    font-size: 70px;
+    text-decoration: none;
+    font-weight: normal;
+    color: #065e94;
+    position: relative;   
+    border-top: 3px solid #065e94;  
+    padding: 10px;
+overflow: hidden;
+}
+.a11::after{
+content: "SUMPTUOUS";
+position: absolute;
+color: white;
+right: 100%;
+transition: 0.5s all linear;
+border-bottom: 3px solid white;
+padding: 0 10px ;
+
+
+}
+
+.a11:hover::after{
+    opacity: 1;
+  transform: translateX(444px);
+}
+.div12{
+    padding: 200px;
+    text-align: center;
+    background-color: #F19F0F;
+}
+.a12{
+    display: inline-block;
+    font-size: 70px;
+    text-decoration: none;
+    font-weight: normal;
+    color: #B4770D;
+    position: relative;   
+padding: 10px;
+z-index: 0;
+}
+.a12::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #B4770D;
+   top: 0;
+   right: 0;
+   transition: 0.3s all linear;
+}
+.a12::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #B4770D;
+    top: 100%;
+    right: 0;
+    transition: 0.3s all linear;
+}
+.a12:hover:after{
+  transform: translateX(-50px) translateY(-44px) skewY(-40deg);
+  z-index: -1;
+  width: 80%;
+ 
+}
+.a12:hover::before{
+    transform: translateX(-50px) translateY(44px) skewY(40deg);
+    z-index: -1;
+    width: 80%;
+}
