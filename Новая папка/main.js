@@ -1,19 +1,16 @@
-var css = document.querySelector('.btn');
-var aas = document.querySelector('.div3');
-var zzd = document.querySelector('.p2');
-var dzz = document.querySelector('.h2');
-var dzd = document.querySelector('.aa');
-var ddd = document.querySelector('.big');
-var zdz = document.querySelector('.p3');
-var zzz = document.querySelector('.p4');
+var hidden = document.querySelector('.hidden');
+var div2 = document.querySelector('.div2');
 
-css.addEventListener('click' , function(){
-css.classList.toggle('new');
-aas.classList.toggle('new1')
-zzd.classList.toggle('p')
-dzz.classList.toggle('h')
-dzd.classList.toggle('aaa')
-zzz.classList.toggle('p')
-zdz.classList.toggle('p')
-ddd.classList.toggle('bigger')
+div2.addEventListener('click', function(){
+hidden.classList.toggle('block');
+}); 
+
+
+var div = document.querySelector('.div');
+var hidden2 = document.querySelector('.hidden2');
+
+
+
+div.addEventListener('click', function(){
+    hidden2.classList.toggle('bb')
 })
